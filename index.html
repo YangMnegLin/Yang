@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				margin: 0 auto;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body id="myPage" data-spy="scroll" data-target="#myNavbar">
+		<!--导航栏-->
+		<nav id="myNavbar" class="navbar navbar-default navbar-inverse container-fluid" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">品牌LOGG</a>
+					<button type="button" class=" navbar navbar-collapse navbar-toggle" data-toggle="collapse" data-target="#collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#HomePage">首页</a></li>
+						<li><a href="#Media">媒体</a></li>
+						<li><a href="#Panels">面板</a></li>
+						<li><a href="#thumb">缩略图</a></li>
+						<li><a href="#Iconform">图标表单</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li data-toggle="modal" data-target="#myModal"><a href="#"> 登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+	
+		<!--模态框登录-->
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" 
+								aria-hidden="true">×
+						</button>
+						<h3 class="modal-title text-center" id="myModalLabel">
+							登录
+						</h3>
+						<p class="pull-right"><a>在钉钉上使用表单大师?</a></p>
+					</div>
+					<div class="modal-body">
+						
+							<div class="row form-group">
+								<div class="col-sm-12  has-feedback" style="margin-top: 10px;">
+									<input type="text" class="form-control input-lg input" placeholder="用户名">
+									<span class="glyphicon glyphicon-user form-control-feedback" style="left: 0;margin-right:15px;"></span>
+								</div>
+								<div class="row" >
+									<div class="col-sm-12" style="margin-top: 10px;">
+										<div class="col-sm-8">
+											<input type="text" class="form-control input-lg input" placeholder="验证码">
+											<span class="glyphicon glyphicon-globe form-control-feedback" style="left: 0;"></span>
+										</div>
+										<div class="col-sm-1 col-sm-offset-1">
+											<button type="button" class="btn btn-default">获取验证码</button>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-sm-12  has-feedback" style="margin-top: 10px;">
+									<input type="text" class="form-control input-lg input" placeholder="密码.至少6位字母或数字">
+									<span class="glyphicon glyphicon-user form-control-feedback" style="left: 0;margin-right:15px;"></span>
+								</div>								
+								<button type="button" class="col-sm-12  btn btn-group-lg btn-default" style="background-color: #000000; color: #FFFFFF; margin-top: 10px;">登录</button>
+								<strong class="pull-left" style="margin-top: 10px;">未有账号,<a>注册</a></strong>
+								<strong class="pull-right" style="margin-top: 10px;">注册即代表您已阅读并同意<a><使用协议></a></strong>
+							</div>						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" 
+								data-dismiss="modal">关闭
+						</button>		
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+		
+
+		<!--轮播图-->
+		<div id="HomePage" class="container-fluid text-center">
+			<div class="row">
+				<div id="myCarousel" class="carousel slide " data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="item active" style="background:#223240">
+							<img src="img/slide1.png" style="margin: 0 auto;">
+						</div>
+
+						<div class="item" style="background:#F5E4DC;">
+							<img src="img/slide2.png" style="margin: 0 auto;">
+						</div>
+
+						<div class="item" style="background:#DE2A2D;">
+							<img src="img/slide3.png" style="margin: 0 auto;">
+						</div>
+					</div>
+
+					<a href="#myCarousel" class="left  carousel-control" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<!-- <span class="sr-only">Previous</span> -->
+					</a>
+
+					<a href="#myCarousel" class="right  carousel-control" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<!-- <span class="sr-only">Next</span> -->
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--媒体-->
+		<div id="Media" class="container-fluid" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/jiaoxuelou.jpg" class="media-object  img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h3>教学楼</h3>
+							<p>新冠肺炎疫情防控期间，建筑工程系根据学院关于"停课不停学“线上教学的部署，紧紧围绕专业教学，发挥校企合作优势,邀请企业教师携手打造线上课堂,收到了良好的反响。</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/lanqiuchang.jpg" class="media-object  img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h3>篮球场</h3>
+							<p>新冠肺炎疫情防控期间，建筑工程系根据学院关于"停课不停学“线上教学的部署，紧紧围绕专业教学，发挥校企合作优势,邀请企业教师携手打造线上课堂,收到了良好的反响。</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="media">
+						<div class="media-left">
+							<img src="img/tiyuchang.jpg" class="media-object  img-thumbnail" width="290px" />
+						</div>
+						<div class="media-body">
+							<h3>教学楼</h3>
+							<p>新冠肺炎疫情防控期间，建筑工程系根据学院关于"停课不停学“线上教学的部署，紧紧围绕专业教学，发挥校企合作优势,邀请企业教师携手打造线上课堂,收到了良好的反响。</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+							<p>建筑工程系发挥校企合作优势，克服实际困难，多次与中亿丰建设集团股份有限公司的高级工程师、项目经理罗龙宽老师沟通，聘请他来为学生教授建筑课程。罗老师是建筑工程系的常聘外聘教师,有丰富的工程经验和教学经验。在线上教学准备过程中，他与时俱进、迎难而上，学习腾讯课堂、职教云等直播及信息化教学方面的技术，承接了《建筑与识图结构》课程网上授课任务</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--面板框-->
+		<div id="Panels" class="container-fluid text-center" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<h1>pricing</h1>
+					<h4>Choose a payment plan that works for you</h4>
+					<div class="col-sm-4">
+						<div class="panel-default" style="border: #000000 1px solid;">
+							<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+								<h1>Basuc</h1>
+							</div>
+							<div class="panel-body">
+								<p><strong>20</strong>Lorem</p>
+								<p><strong>15</strong>lpsum</p>
+								<p><strong>5</strong>Dolor</p>
+								<p><strong>2</strong>Sit</p>
+								<p><strong>Endless</strong>Ament</p>
+							</div>
+							<div class="panel-footer">
+								<h1>$19</h1>
+								<h4>per month</h4>
+								<button type="button" style="background-color: #000000; color: #FFFFFF;" class="btn-lg">Sign Up</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="panel-default" style="border: #000000 1px solid;">
+							<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+								<h1>Basuc</h1>
+							</div>
+							<div class="panel-body">
+								<p><strong>20</strong>Lorem</p>
+								<p><strong>15</strong>lpsum</p>
+								<p><strong>5</strong>Dolor</p>
+								<p><strong>2</strong>Sit</p>
+								<p><strong>Endless</strong>Ament</p>
+							</div>
+							<div class="panel-footer">
+								<h1>$19</h1>
+								<h4>per month</h4>
+								<button type="button" style="background-color: #000000; color: #FFFFFF;" class="btn-lg">Sign Up</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-4">
+						<div class="panel-default" style="border: #000000 1px solid;">
+							<div class="panel-heading" style="background-color: #000000; color: #FFFFFF;">
+								<h1>Basuc</h1>
+							</div>
+							<div class="panel-body">
+								<p><strong>20</strong>Lorem</p>
+								<p><strong>15</strong>lpsum</p>
+								<p><strong>5</strong>Dolor</p>
+								<p><strong>2</strong>Sit</p>
+								<p><strong>Endless</strong>Ament</p>
+							</div>
+							<div class="panel-footer">
+								<h1>$19</h1>
+								<h4>per month</h4>
+								<button type color: #FFFFFF;" class="btn-lg">Sign Up</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<!--缩略图-->
+		<div id="thumb" class="container-fluid" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h1>巡演日期</h1>
+						<p>我们将演绎自己的音乐.</p>
+						<p>快点来购票吧!</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<ul class="list-group">
+						<li class="list-group-item">September <span class="btn btn-danger">售完!</span></li>
+						<li class="list-group-item">October <span class="btn btn-danger">售完!</span></li>
+						<li class="list-group-item">November
+							<span class="label btn label-default  label-success  btn-lg pull-right " style="border-radius: 25px; background-color:#555555 ;">3</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-xs-4 ">
+						<div class="thumbnail">
+							<img src="img/bj.jpg" class="img-rounded">
+
+							<p><strong>北京</strong></p>
+							<p></p>
+							<p><strong>Sta. 28 November 2017</strong></p>
+							<span class="btn btn-default "  style="background-color: #CCCCCC; ">购票</span>
+
+						</div>
+					</div>
+					<div class="col-xs-4 ">
+						<div class="thumbnail">
+							<img src="img/sh.jpg" class="img-rounded">
+
+							<p><strong>上海</strong></p>
+							<p></p>
+							<p> <strong>Sun. 29 November 2017</strong></p>
+							<span class="btn btn-default "  style="background-color: #CCCCCC; ">购票</span>
+
+						</div>
+					</div>
+					<div class="col-xs-4 ">
+						<div class="thumbnail">
+							<img src="img/wh.jpg" class="iimg-rounded">
+							<p><strong>武汉</strong></p>
+							<p></p>
+							<p> <strong>Fri. 27 November 2017</strong></p>
+							<span class="btn btn-default "  style="background-color: #CCCCCC; ">购票</span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--图标表单-->
+		<div id="Iconform" class="container-fluid">
+			<div class="container">
+				<h1 class="text-center">CONTACT</h1>				
+				<div class="row">
+					<div class="col-sm-5">
+						<p>Contact us and we'll get back to you within 20 hours.</p>
+						<P><span class="glyphicon glyphicon-map-marker">Chicago US</span></P>
+						<P><span class="glyphicon glyphicon-phone">+00 151515151515</span></P>
+						<P><span class="glyphicon glyphicon-envelope">myemail@something.com</span></P>
+					</div>
+					<div class="col-sm-7">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="text" value="Name" />
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="email" value="email" />
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea type="text"  class="form-control" rows="5"  ></textarea>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 10px;">
+							<div class="pull-right">
+								<button type="button" class="btn btn-default">send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<!--底部-->		
+		<div style="background-color: #000000; margin-top: 30px;" class="container-fluid text-center">			
+				<b style="  color: #DCDCDC;">计算机系|网站开发| Bootstrap</b>
+				<p style=" margin-top: 30px; color: #DCDCDC;">地址:广东xxx市xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>		
+		</div>
+	</body>
+</html>
